@@ -511,6 +511,9 @@ button {
     border-radius: 8px;
     aspect-ratio: 4/3;
     cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .portfolio-item img {
