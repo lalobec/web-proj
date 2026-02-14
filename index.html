@@ -1,458 +1,76 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Muebles de madera contrachapada a medida y carpintería de cocina. Diseño experto, artesanía moderna, construido para durar. Sirviendo hogares con soluciones de calidad personalizadas.">
-    <title>Diseñoría | Muebles de Madera a Medida y Cocinas</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Web development portfolio - Projects in development">
+    <title>Portfolio | Web Projects</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Navigation -->
-    <header class="header" id="header">
-        <div class="container">
-            <nav class="nav">
-                <div class="logo">
-                    <a href="#home">
-                        <img src="LOGO25.png" alt="Diseñoría" class="logo-image">
-                    </a>
-                </div>
-                <button class="nav-toggle" id="navToggle" aria-label="Alternar navegación">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link">Inicio</a></li>
-                    <li><a href="#kitchens" class="nav-link">Cocinas</a></li>
-                    <li><a href="#furniture" class="nav-link">Muebles</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
-                    <li><a href="#process" class="nav-link">Proceso</a></li>
-                    <li><a href="#about" class="nav-link">Nosotros</a></li>
-                    <li><a href="#contact" class="nav-link">Contacto</a></li>
-                    <li><a href="#contact" class="btn btn-primary btn-nav">Cotización Gratis</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Web Projects</h1>
+            <p class="subtitle">In Development</p>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-background"></div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Cocinas a medida que perduran</h1>
-                <p class="hero-subtitle">Diseñamos y construimos muebles de madera contrachapada que combinan durabilidad, estilo moderno y funcionalidad inteligente—creados específicamente para tu espacio.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary btn-lg">Solicita tu cotización</a>
-                    <a href="#portfolio" class="btn btn-secondary btn-lg">Ver nuestro trabajo</a>
+        <main class="projects-list">
+            <a href="sites/disenoria/" class="project-card">
+                <div class="project-number">01</div>
+                <div class="project-info">
+                    <h2 class="project-title">Diseñoría</h2>
+                    <p class="project-description">Website for custom furniture business and kitchen cabinetry</p>
+                    <div class="project-meta">
+                        <span class="tag">HTML/CSS/JS</span>
+                        <span class="tag">Responsive</span>
+                        <span class="status status-active">In Development</span>
+                    </div>
                 </div>
-                <div class="hero-badge">
-                    <svg class="icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M10 1l2.5 6.5L19 8l-5 4.5L15.5 19 10 15.5 4.5 19 6 12.5 1 8l6.5-.5L10 1z" fill="currentColor"/>
-                    </svg>
-                    <span>Más de 500 Proyectos Realizados</span>
-                </div>
-            </div>
-        </div>
-    </section>
+                <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
 
-    <!-- Value Propositions -->
-    <section class="values">
-        <div class="container">
-            <div class="values-grid">
-                <div class="value-item">
-                    <div class="value-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
+            <!-- Placeholder for future projects -->
+            <div class="project-card project-placeholder">
+                <div class="project-number">02</div>
+                <div class="project-info">
+                    <h2 class="project-title">Next Project</h2>
+                    <p class="project-description">New website coming soon...</p>
+                    <div class="project-meta">
+                        <span class="status status-upcoming">Coming Soon</span>
                     </div>
-                    <h3 class="value-title">Diseño personalizado</h3>
-                    <p class="value-text">Cada proyecto comienza con tu visión. Diseñamos cocinas y muebles que se adaptan exactamente a tu espacio, estilo y necesidades—sin soluciones prefabricadas.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                        </svg>
-                    </div>
-                    <h3 class="value-title">Artesanía de calidad</h3>
-                    <p class="value-text">Construimos muebles para durar usando madera contrachapada premium y técnicas de ensamblaje probadas. Calidad que puedes ver y sentir en cada detalle.</p>
-                </div>
-                <div class="value-item">
-                    <div class="value-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                    </div>
-                    <h3 class="value-title">Valor duradero</h3>
-                    <p class="value-text">Diseño inteligente, materiales duraderos e instalación experta significan muebles que te servirán por décadas, no solo años.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section class="services" id="kitchens">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Lo que construimos</h2>
-                <p class="section-subtitle">Artesanía especializada para tu hogar</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card service-card-featured">
-                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1556912173-46c336c7fd55?w=800');"></div>
-                    <div class="service-content">
-                        <h3 class="service-title">Carpintería de cocina</h3>
-                        <p class="service-description">Soluciones completas de carpintería y almacenamiento para cocinas a medida. Desde remodelaciones completas hasta actualización de gabinetes, transformamos cocinas en espacios hermosos y funcionales que amarás por años.</p>
-                        <ul class="service-features">
-                            <li>Remodelaciones completas de cocina</li>
-                            <li>Diseño de gabinetes personalizados</li>
-                            <li>Islas de cocina y despensas</li>
-                            <li>Optimización de almacenamiento</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline">Saber más</a>
-                    </div>
-                </div>
-                <div class="service-card" id="furniture">
-                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=800');"></div>
-                    <div class="service-content">
-                        <h3 class="service-title">Muebles a medida</h3>
-                        <p class="service-description">Closets personalizados, sistemas de estantería, oficinas en casa y más. Construimos muebles de madera contrachapada tan únicos como tu hogar.</p>
-                        <ul class="service-features">
-                            <li>Sistemas de closets</li>
-                            <li>Estanterías empotradas</li>
-                            <li>Soluciones para oficina en casa</li>
-                            <li>Centros de entretenimiento</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline">Saber más</a>
+            <div class="project-card project-placeholder">
+                <div class="project-number">03</div>
+                <div class="project-info">
+                    <h2 class="project-title">Next Project</h2>
+                    <p class="project-description">New website coming soon...</p>
+                    <div class="project-meta">
+                        <span class="status status-upcoming">Coming Soon</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </main>
 
-    <!-- Portfolio Preview -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Proyectos recientes</h2>
-                <p class="section-subtitle">Artesanía de calidad en cada detalle</p>
-            </div>
-            <div class="portfolio-grid">
-                <a href="proyectos/cocina-moderna-minimalista.html" class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600" alt="Cocina moderna con gabinetes a medida">
-                    <div class="portfolio-overlay">
-                        <h4>Cocina minimalista moderna</h4>
-                        <p>Remodelación completa con carpintería personalizada</p>
-                    </div>
-                </a>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600" alt="Isla de cocina con almacenamiento">
-                    <div class="portfolio-overlay">
-                        <h4>Isla de cocina personalizada</h4>
-                        <p>Solución de almacenamiento inteligente</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=600" alt="Sistema de closet walk-in">
-                    <div class="portfolio-overlay">
-                        <h4>Sistema de closet walk-in</h4>
-                        <p>Solución de organización personalizada</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=600" alt="Diseño de cocina contemporánea">
-                    <div class="portfolio-overlay">
-                        <h4>Cocina contemporánea</h4>
-                        <p>Carpintería y mostradores personalizados completos</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=600" alt="Estantería empotrada">
-                    <div class="portfolio-overlay">
-                        <h4>Estantería empotrada</h4>
-                        <p>Muro de biblioteca personalizado</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600" alt="Organización de despensa de cocina">
-                    <div class="portfolio-overlay">
-                        <h4>Despensa de cocina</h4>
-                        <p>Sistema de organización personalizado</p>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-cta">
-                <a href="#contact" class="btn btn-outline-dark">Ver portafolio completo</a>
-            </div>
-        </div>
-    </section>
+        <footer class="footer">
+            <p>&copy; 2026 • Portfolio in development</p>
+        </footer>
+    </div>
 
-    <!-- Process Section -->
-    <section class="process" id="process">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Cómo trabajamos</h2>
-                <p class="section-subtitle">Un proceso simple y transparente desde el diseño hasta la instalación</p>
-            </div>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h4 class="step-title">Consulta</h4>
-                        <p class="step-text">Nos reunimos para discutir tu visión, medir tu espacio y entender tus necesidades y presupuesto.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h4 class="step-title">Diseño</h4>
-                        <p class="step-text">Nuestro equipo crea diseños detallados y renderizados 3D para que puedas visualizar el resultado final.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h4 class="step-title">Construcción</h4>
-                        <p class="step-text">Fabricamos tus muebles en nuestro taller usando materiales premium y técnicas probadas.</p>
-                    </div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h4 class="step-title">Instalación</h4>
-                        <p class="step-text">Instalación profesional con atención al detalle, dejando tu espacio limpio y listo para disfrutar.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Transformaron nuestra cocina pequeña en un espacio de trabajo de ensueño. Los gabinetes personalizados son absolutamente hermosos y muy bien hechos."</p>
-                    <div class="testimonial-author">
-                        <strong>Sarah Martínez</strong>
-                        <span>Remodelación de Cocina</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Profesionales de principio a fin. Escucharon lo que necesitábamos y diseñaron una solución que fue incluso mejor de lo que imaginamos."</p>
-                    <div class="testimonial-author">
-                        <strong>David Rodríguez</strong>
-                        <span>Sistema de Closet Personalizado</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Cinco años después, nuestra cocina aún se ve como nueva. La mejor inversión que hicimos en nuestra casa."</p>
-                    <div class="testimonial-author">
-                        <strong>Jennifer López</strong>
-                        <span>Renovación Completa de Cocina</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">Construido sobre artesanía, impulsado por calidad</h2>
-                    <p>Somos un equipo local de artesanos que creemos que tu hogar merece algo mejor que muebles prefabricados. Durante más de 15 años, hemos estado diseñando y construyendo muebles de madera contrachapada personalizados—especializándonos en cocinas que combinan hermoso diseño con durabilidad a prueba de balas.</p>
-                    <p>Elegimos madera contrachapada porque es fuerte, estable y sostenible. Elegimos el trabajo personalizado porque cada hogar es diferente. Y elegimos enfocarnos en cocinas porque es donde sucede la vida.</p>
-                    <p>Ya sea que estés planeando una remodelación completa de cocina o necesites una pieza personalizada única, aportamos la misma atención al detalle y compromiso con la calidad.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Años de experiencia</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Proyectos completados</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">100%</div>
-                            <div class="stat-label">Diseño personalizado</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=700" alt="Artesano trabajando">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact / CTA Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2 class="section-title">¿Listo para transformar tu cocina?</h2>
-                    <p class="contact-description">Hablemos de tu proyecto. Completa el formulario y te responderemos en 24 horas con una consulta gratuita.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                            <div>
-                                <strong>Teléfono</strong>
-                                <p>(555) 123-4567</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                            <div>
-                                <strong>Email</strong>
-                                <p>hola@disenoria.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="10" r="3"/>
-                                <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"/>
-                            </svg>
-                            <div>
-                                <strong>Área de Servicio</strong>
-                                <p>Área Metropolitana</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Nombre completo *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Teléfono</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="projectType">Tipo de proyecto *</label>
-                            <select id="projectType" name="projectType" required>
-                                <option value="">Selecciona un tipo de proyecto</option>
-                                <option value="kitchen-remodel">Remodelación completa de cocina</option>
-                                <option value="kitchen-cabinets">Gabinetes de cocina</option>
-                                <option value="kitchen-island">Isla de cocina</option>
-                                <option value="closet">Sistema de closet</option>
-                                <option value="shelving">Estantería empotrada</option>
-                                <option value="other">Otros muebles a medida</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Cuéntanos sobre tu proyecto *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar solicitud</button>
-                        <p class="form-note">Responderemos en 24 horas</p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4 class="footer-title">Diseñoría</h4>
-                    <p>Carpintería de cocina y muebles personalizados construidos para durar. Sirviendo hogares con artesanía de calidad desde 2010.</p>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Enlaces rápidos</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Inicio</a></li>
-                        <li><a href="#kitchens">Cocinas</a></li>
-                        <li><a href="#furniture">Muebles a medida</a></li>
-                        <li><a href="#portfolio">Portafolio</a></li>
-                        <li><a href="#process">Nuestro proceso</a></li>
-                        <li><a href="#about">Nosotros</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Servicios</h4>
-                    <ul class="footer-links">
-                        <li><a href="#kitchens">Remodelaciones de cocina</a></li>
-                        <li><a href="#kitchens">Gabinetes personalizados</a></li>
-                        <li><a href="#kitchens">Islas de cocina</a></li>
-                        <li><a href="#furniture">Sistemas de closets</a></li>
-                        <li><a href="#furniture">Estanterías empotradas</a></li>
-                        <li><a href="#furniture">Oficinas en casa</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Contacto</h4>
-                    <ul class="footer-links">
-                        <li>Teléfono: (555) 123-4567</li>
-                        <li>Email: hola@disenoria.com</li>
-                        <li>Horario: Lun-Vie 8AM-6PM</li>
-                        <li>Sáb 9AM-4PM</li>
-                    </ul>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="#F5F1E8" stroke-width="2"/>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#F5F1E8" stroke-width="2"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Facebook">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Diseñoría. Todos los derechos reservados.</p>
-                <div class="footer-legal">
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Términos de servicio</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="18 15 12 9 6 15"/>
-        </svg>
-    </button>
-
-    <script src="script.js"></script>
+    <script>
+        // Subtle entrance animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
 </body>
 </html>
